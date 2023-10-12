@@ -1,0 +1,52 @@
+/* FONT SIZES */
+.makemeacircle, .second-box, .third-box {
+  background-color: blue;
+  border: 10px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.box-item {
+  background-color: #ff9999;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box-item:hover {
+  background-color: black;
+  color: white;
+}
+.menu-open .box-item {
+  border: 5px solid black;
+}
+.menu-close .box-item {
+  border: 5px solid yellow;
+}
+
+.second-box, .third-box {
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: white;
+  color: red;
+  background-color: #ffffcc;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+.second-box h2, .third-box h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.third-box {
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@import 'colors.scss';
+@import 'typography.scss';
+@import 'modules.scss';
+@import 'mixins.scss';
+
+.box {
+  display: flex;
+  flex: {
+    direction: row;
+    wrap: nowrap;
+  }
+
+  &-item {
+    background-color: lighten($secondary-color, 30%);
+    font-size: $fontSize;
+    font-family: $sans-serif;
+
+    &:hover {
+      background-color: $border-color;
+      color: white;
+    }
+
+    .menu-open & {
+      border: 5px solid $border-color;
+    }
+
+    .menu-close & {
+      border: 5px solid yellow;
+    }
+  }
+}
+
+.second-box {
+  @include setBoxDimensions(100px, 200px);
+  background-color: lighten($primary-color, 40%);
+  border: 10px solid $border-color;
+
+  h2 {
+    @include fontArialwithSize(20px);
+  }
+
+  @extend .makemeacircle;
+  @include borderRadius(10px);
+}
+
+.third-box {
+  @extend .second-box;
+  @include setBoxDimensions(300px, 200px);
+  @include borderRadius(30px);
+}

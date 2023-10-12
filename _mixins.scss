@@ -1,0 +1,26 @@
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin fontArialwithSize($size) {
+  font-family: $sans-serif;
+  font-size: $size;
+}
+
+@mixin setBoxDimensions($width, $height) {
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+
+  @if $width >= 200px {
+    background-color: $border-color;
+    color: white;
+  } @else if $width >= 100px {
+    background-color: white;
+    color: $secondary-color;
+  } @else {
+    color: $fourth-color;
+  }
+}
